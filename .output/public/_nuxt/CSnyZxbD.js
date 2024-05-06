@@ -1,0 +1,1 @@
+const e=async s=>({appName:"Pangu-Network",home:{howItWorks:"How it works",investors:"Investors",ecosystem:"Ecosystem",docs:"Docs",axeTestnetLive:"Avatar Studio",trust:"FuHsi"}});export{e as default};

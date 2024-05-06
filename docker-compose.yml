@@ -1,0 +1,10 @@
+version: "3"
+services:
+    项目名称:
+        image: Dockfile打包好的项目镜像
+        restart: unless-stopped
+        build:
+          context: ./
+        ports:
+          - 3002:3002
+        container_name: pangu-network

@@ -1,0 +1,47 @@
+// elment plus 组件样式定制
+:root {
+  .el-icon {
+    --color: initial;
+  }
+  .el-dropdown {
+    width: auto;
+  }
+  .el-dialog {
+    max-width: 100vw;
+    .el-descriptions__table {
+      .el-descriptions__cell {
+        position: relative;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .el-dialog {
+      width: 95vw;
+    }
+  }
+
+  // 分割线
+  .el-divider {
+    .el-divider__text {
+      width: max-content;
+    }
+  }
+  .el-divider--horizontal {
+    margin: 10px 0;
+  }
+
+  // 抽屉
+  .el-drawer {
+    .el-drawer__header {
+      margin-bottom: 0;
+    }
+  }
+
+  .el-menu-item.is-active {
+    background: var(--siderbar-menu-active-bg);
+  }
+
+  .sidebarContainer{
+    z-index: 9;
+  }
+}

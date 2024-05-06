@@ -1,0 +1,26 @@
+.dark {
+}
+
+.light {
+  
+}
+
+
+#nprogress .bar {
+  background: linear-gradient(
+    90deg,
+    var(--light-color),
+    var(--light-color2)
+  ) !important; //自定义颜色
+  height: 50px;
+}
+
+.text-bor {
+  color: #000;
+  text-shadow:
+    -0.5px -0.5px 0 #fafafa,
+    0.5px -0.5px 0 #fafafa,
+    -0.5px 0.5px 0 #fafafa,
+    0.5px 0.5px 0 #fafafa,
+    0 0 5px #000; 
+}
