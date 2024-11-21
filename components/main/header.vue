@@ -13,7 +13,7 @@ const navigation = [
   // { name: 'home.investors', id: 'ourInvestors'},
   // { name: 'home.ecosystem', id: 'ecosystem'},
   // { name: 'home.docs', href: '/'},
-  { name: 'home.axeTestnetLive', href: '/', ico: true}
+  { name: 'home.axeTestnetLive', href: '/avatar', ico: true}
 ]
 
 const route = useRoute()

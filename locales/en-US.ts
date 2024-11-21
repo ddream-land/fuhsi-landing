@@ -8,6 +8,9 @@ export default defineI18nLocale(async locale => {
             docs: 'Docs',
             axeTestnetLive: 'Avatar Studio',
             trust: 'FuHsi',
+        },
+        avatar: {
+            moreCreativeTools: 'More creative tools'
         }
     }
 })

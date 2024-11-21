@@ -13,10 +13,14 @@
 body {
   font-size: 16px;
   font-family: "Sen", sans-serif;
-  background: #111111;
+  background: #ffffff;
 }
 #__nuxt {
   min-height: 100vh;
+  background: #ffffff;
+  color: #111111;
+}
+body.dark, body.dark #__nuxt{
   background: #111111;
   color: #fafafa;
 }

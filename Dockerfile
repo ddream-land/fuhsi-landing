@@ -9,7 +9,10 @@ WORKDIR /app
 COPY . /app
 
 # 安装依赖项并构建应用程序
-RUN npm install --registry https://registry.npmmirror.com && \
+#RUN npm install --registry https://registry.npmmirror.com && \
+
+RUN npm i pnpm -g && \
+    pnpm install && \
     npm run build && \
     npm cache clean --force
 
@@ -34,5 +37,5 @@ ENV NITRO_PORT=3002
 EXPOSE 3002
 
 # 设置入口点为启动脚本
-ENTRYPOINT ["npm", "run", "preview"]
+ENTRYPOINT ["npm", "run", "dockerPreview"]
 

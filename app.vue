@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 onMounted(() => {
-  const body = document.body;
-  body.classList.add("dark");
+  // const body = document.body;
+  // body.classList.add("dark");
 });
 </script>

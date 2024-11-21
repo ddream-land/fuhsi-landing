@@ -31,13 +31,15 @@
 				</div>
 			</div> -->
 		</div>
-		<div class="lines">
+		<div class="lines" >
 			<div v-for="i in 8"></div>
 		</div>
 
 	</div>
 </template>
+<script setup>
 
+</script>
 <style lang="scss" scoped>
 .bnr-btn{
 	position: relative; 
@@ -59,15 +61,15 @@
 
 @keyframes raindrop {
   0% {
-    opacity: 0;
+    opacity: 0; width: 1px;
     transform: translateY(0%);
   }
   50% {
-    opacity: 1;
+    opacity: 1; width: 1px;
     transform: translateY(-75%);
   }
   100% {
-    opacity: 0;
+    opacity: 0; width: 1px;
     transform: translateY(-150%);
   }
 }
@@ -97,7 +99,7 @@
 	&>div{
 		position: absolute; display: block; z-index: 0;
 	  	background-image: linear-gradient(to bottom, #fff, rgba(0, 224, 161, 0));
-	  	animation: raindrop 3s linear infinite; width: 1px;
+	  	animation: raindrop 3s linear infinite; 
 
 		&:nth-child(1) {
 	        top: 400px; left: 170px; height: 97px; animation-delay: 0.5s;
@@ -118,7 +120,7 @@
 	        top: 629px; left: 1364px; height: 177px; animation-delay: 3.5s;
 	    }
 	    &:nth-child(7) {
-	        top: 164px; left: 1595px; height: 148px; width: 2px; animation-delay: 4s;
+	        top: 164px; left: 1595px; height: 148px; animation-delay: 4s;
 	    }
 	    &:nth-child(8) {
 	        top: 491px; left: 1709px; height: 177px; animation-delay: 4.5s;

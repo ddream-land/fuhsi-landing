@@ -9,6 +9,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "dockerPreview": "node ./.output/server/index.mjs",
     "postinstall": "nuxt prepare",
     "pm2start": "pm2 start ./ecosystem.config.js --name Pangu-Network",
     "pm2stop": "pm2 stop Pangu-Network",
@@ -25,7 +26,8 @@
     "nuxt-icon": "^0.6.10",
     "postcss-preset-env": "^8.5.1",
     "sass": "^1.74.1",
-    "scrollreveal": "^4.0.9"
+    "scrollreveal": "^4.0.9",
+    "vue3-waterfall-plugin": "^1.1.5"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",

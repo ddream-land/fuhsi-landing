@@ -1,0 +1,33 @@
+name: pangu在线编译发布
+
+on:
+  workflow_dispatch:
+     
+# env:
+#   SSH_KEY: |  
+#       -----BEGIN OPENSSH PRIVATE KEY-----
+#       b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+#       QyNTUxOQAAACDedPIFsVDNnRr32EK9GDzhwjxTsInKF7usjWdO1G1y1gAAAJh73DnGe9w5
+#       xgAAAAtzc2gtZWQyNTUxOQAAACDedPIFsVDNnRr32EK9GDzhwjxTsInKF7usjWdO1G1y1g
+#       AAAECi9KU1UowtJOAiXned7BIPeFfcpuxxbFW78BIWq9boGd508gWxUM2dGvfYQr0YPOHC
+#       PFOwicoXu6yNZ07UbXLWAAAADmFjdGlvbnNAZ2l0aHViAQIDBAUGBw==
+#       -----END OPENSSH PRIVATE KEY-----
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build
+      
+      # # 部署
+      # - run: |
+      #     echo "${{ env.SSH_KEY }}" > actions.key && \
+      #     chmod 400 actions.key && \
+      #     scp -o StrictHostKeyChecking=no -i actions.key -r ./dist/ tomcat@47.96.73.66:~/server/web3 \
+      # ssh -i aa.key root@13213213.213213213 && cd /usr/project/site && git pull origin master

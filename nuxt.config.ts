@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     ],
     plugins: [
         "@/plugins/directives",
+        { src: '~/plugins/vue3-waterfall-plugin', mode: 'client' }
     ],
     modules: [
         "@element-plus/nuxt",

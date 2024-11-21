@@ -16,11 +16,17 @@ useHead({
         return `${baseTitle}${productCategory ? " - " + productCategory : ""}`;
     },
 });
+definePageMeta({
+    layout: "default"
+})
+const myReveal = ref(null);
 onMounted(() => {
-    if (process.client){
+    if (process.client && !myReveal.value){
         import('scrollreveal').then(module => {
             const ScrollReveal = module.default;
-            ScrollReveal().reveal('.bottom-scroll-animation', {
+            myReveal.value = ScrollReveal();
+            myReveal.value.reveal('.bottom-scroll-animation', {
+                  reset: true,
                   delay: 100,
                   distance: '50px',
                   origin: 'bottom',
@@ -28,25 +34,30 @@ onMounted(() => {
                   easing: 'ease-in-out',
                   interval: 300,
             });
-            ScrollReveal().reveal('.left-scroll-animation', {
+            myReveal.value.reveal('.left-scroll-animation', {
+                  reset: true,
                   delay: 100,
                   distance: '50px',
                   origin: 'left',
-                  opacity: 0,
+                  opacity: 1,
                   easing: 'ease-in-out',
                   interval: 300,
             });
-            ScrollReveal().reveal('.right-scroll-animation', {
+            myReveal.value.reveal('.right-scroll-animation', {
+                  reset: true,
                   delay: 100,
                   distance: '50px',
                   origin: 'right',
-                  opacity: 0,
+                  opacity: 1,
                   easing: 'ease-in-out',
                   interval: 300,
             });
         })
     }
 });
+onBeforeUnmount(() => {
+    !!myReveal.value && myReveal.value.destroy();
+})
 
 </script>
 

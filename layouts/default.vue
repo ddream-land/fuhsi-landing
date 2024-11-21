@@ -15,6 +15,9 @@
 <script setup>
 const scrollTop = ref(0);
 onMounted(() => {
+    const body = document.body;
+    body.classList.add("dark");
+    
     window.addEventListener('scroll', function() {
         scrollTop.value = window.pageYOffset || document.documentElement.scrollTop;
     });
@@ -25,6 +28,7 @@ watch(() => route.path, (val) => {
 }, { immediate: true, deep: true })
 
 </script>
+
 <style scoped>
 .gd-container { display: grid; grid-template-rows: 1fr auto; min-height: 100vh; }
 .skicy{
