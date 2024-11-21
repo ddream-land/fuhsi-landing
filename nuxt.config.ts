@@ -15,10 +15,10 @@ export default defineNuxtConfig({
             charset: "utf-8",
             viewport: "width=device-width, initial-scale=1.0",
             meta: [
-                { name: "description", content: "fuhsi.ai" },
+                { name: "description", content: "galgame.ai" },
                 {
                     name: "keywords",
-                    content: "fuhsi.ai",
+                    content: "galgame.ai",
                 },
             ],
             link: [

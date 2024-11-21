@@ -1,0 +1,1 @@
+const o=async e=>({appName:"Pangu-Network",home:{howItWorks:"How it works",investors:"Investors",ecosystem:"Ecosystem",docs:"Docs",axeTestnetLive:"Avatar Studio",trust:"FuHsi"},avatar:{moreCreativeTools:"More creative tools"}});export{o as default};

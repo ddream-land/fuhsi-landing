@@ -1,19 +1,19 @@
 <template>
-	<section class="m-auto md:w-[70%] w-[90%] md:pt-36 pt-20 md:pb-40 pb-14">
-		<div class="md:text-4xl text-2xl font-bold mb-4">Available tools</div>
+	<section class="m-auto md:w-[70%] w-[90%] md:pt-36">
+		<div class="md:text-4xl text-2xl font-bold mb-4">Flagship Product</div>
 
        	<div class="mt-8 eco-item bottom-scroll-animation">
        		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
-       			<NuxtImg src="/img/home/eco-ico11.png" />
+       			<NuxtImg src="/img/home/galgameai.png" />
        		</div>
-   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">AI Creates Character Images</div>
+   			<div class="text-2xl text-[#111111] font-bold md:ml-48 px-6 py-7 tit">Fully AI-driven UGC Galgame Platform</div>
    			<div class="con py-8 md:pr-12 md:ml-[89px] md:pl-32">
-   				<div class="text-2xl">Avatar Studio</div>
-   				<div class="text-[#cccccc] text-base mt-4">Utilizing advanced AI Art technology, anyone can create high-quality, personalized characters without the need for complex drawing skills. This meets the needs of game design, digital art creation, or simply curiosity and the desire to create.</div>
+   				<div class="text-2xl">galgame.ai</div>
+   				<div class="text-[#cccccc] text-base mt-4">galgame.ai is an application that harnesses AI to power galgame entirely. Users can craft their own unique galgame using just a few keywords/tags. This allows players to create any fanfiction or original visual novels, all completely driven by AI, including the story, quests, and mechanics.</div>
    			</div>
        	</div>
 
-       	<div class="mt-8 eco-item bottom-scroll-animation r">
+      <!--  	<div class="mt-8 eco-item bottom-scroll-animation r">
        		<div class="md:absolute w-44 h-44 ico flex items-center justify-center cursor-pointer transition-[transform] ease-in-out hover:-translate-y-2">
        			<NuxtImg src="/img/home/eco-ico22.png" />
        		</div>
@@ -21,18 +21,6 @@
    			<div class="con py-8 md:pl-12 md:mr-[75px] md:pr-32">
    				<div class="flex items-center">
    					<div class="text-2xl flex-1">Voice Studio</div>
-   					<!-- <div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
-   						<NuxtImg src="/img/home/eco-ico1.png" />
-   					</div>
-   					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
-   						<NuxtImg src="/img/home/eco-ico2.png" />
-   					</div>
-   					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
-   						<NuxtImg src="/img/home/eco-ico3.png" />
-   					</div>
-   					<div class="imgico flex items-center justify-center ml-4 cursor-pointer transition-[transform] hover:scale-105">
-   						<NuxtImg src="/img/home/eco-ico4.png" />
-   					</div> -->
    				</div>
    				<div class="text-[#cccccc] text-base mt-4">Sound has the ability to connect hearts and evoke emotions. Therefore, we are dedicated to providing an intuitive, user-friendly platform that enables everyone to effortlessly create, edit, and share customized AI voices. From realistic human voices to fantastical sound effects, your creativity will know no bounds.</div>
    			</div>
@@ -61,7 +49,7 @@
    				<div class="text-2xl">FuHsi Saga Engine</div>
    				<div class="text-[#cccccc] text-base mt-4">By deeply integrating AI technology, the FuHsi Saga Engine offers a user-friendly, intuitive platform that, leveraging the power of artificial intelligence, enables anyone to easily create and experience their unique games, and share this joy with the world. With the assistance of AI, games can dynamically adjust storylines and outcomes in real time based on player decisions and preferences, delivering an exclusive and unparalleled gaming experience to each player.</div>
    			</div>
-       	</div>
+       	</div> -->
        
 	</section>
 </template>

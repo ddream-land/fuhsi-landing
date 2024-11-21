@@ -4,6 +4,8 @@
         <HomeHowItWorks id="howItWorks"/>
         <!-- <HomeOurInvestors id="ourInvestors"/> -->
         <HomeEcosystem id="ecosystem"/>
+        <HomeFounderAndAdvisors />
+        <HomeBackers />
     </section>
 </template>
 
@@ -12,7 +14,7 @@
 // 设置SEO
 useHead({
     titleTemplate: (productCategory: any) => {
-        const baseTitle = "fuhsi.ai";
+        const baseTitle = "galgame.ai";
         return `${baseTitle}${productCategory ? " - " + productCategory : ""}`;
     },
 });

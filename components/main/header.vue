@@ -46,22 +46,27 @@ const jumpToHash = (id) => {
     <div class="bg-[#111111] md:h-24 h-20 flex justify-between items-center">
         <NuxtLink to="/">
             <div class="flex items-center px-1 2xl:ml-64 xl:ml-48 lg:ml-32 md:ml-16 ml-4">
-                <NuxtImg src="/img/logo.png" alt="Logo" class="h-[28px]" />
+                <NuxtImg src="/img/logo.png" alt="Logo" class="h-[50px]" />
             </div>
         </NuxtLink>
 
         <div class="flex items-center">
             <!-- 导航菜单 -->
             <nav class="hidden lg:flex mr-4">
-                <template v-for="item in navigation" :key="item.name">
+                <!-- <template v-for="item in navigation" :key="item.name">
                     <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
                         {{ $t(item.name) }}
                     </div>
                     <NuxtLink v-else :to="item.href" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2', { 'active': path === item.href }]" :aria-current="path === item.href ? 'page' : undefined">
                         {{ $t(item.name) }}
-                        <NuxtImg v-if="item.ico" class="w-11 inline-block ml-2" src="/img/beta.png"/>     
+                        <NuxtImg v-if="item.ico" class="w-[92px] inline-block ml-2" src="/img/beta.png"/>     
                     </NuxtLink>
-                </template>
+                </template> -->
+                <NuxtLink to="/" :class="['hover:text-gray-300 md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2']" >
+                    galgame.ai
+                    <NuxtImg class="w-[92px] inline-block ml-4" src="/img/beta.png"/>     
+                </NuxtLink>
+                
             </nav>
 
             <el-dropdown @command="onLanguageChange">

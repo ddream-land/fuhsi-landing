@@ -1,5 +1,5 @@
 <template>
-	<section class="m-auto 2xl:w-[70%] md:w-[80%] w-[90%] py-12 pt-24 overflow-hidden">
+	<section class="m-auto 2xl:w-[70%] md:w-[80%] w-[90%] py-12 overflow-hidden">
 		<div class="md:text-4xl text-2xl font-bold mb-8">{{ $t('home.howItWorks') }}</div>
 		<div class="bg-[#161616] md:p-20 p-4 grid md:grid-cols-3 grid-cols-1 md:gap-x-12 md:gap-y-24">
 			<div class="md:w-[23vw] w-full">

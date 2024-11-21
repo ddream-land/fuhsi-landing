@@ -108,7 +108,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1.0"},{"charset":"utf-8"},{"name":"description","content":"fuhsi.ai"},{"name":"keywords","content":"fuhsi.ai"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[],"noscript":[{"children":"JavaScript is required"}],"charset":"utf-8","viewport":"width=device-width, initial-scale=1.0"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1.0"},{"charset":"utf-8"},{"name":"description","content":"galgame.ai"},{"name":"keywords","content":"galgame.ai"}],"link":[{"rel":"icon","type":"image/png","href":"/favicon.png"}],"style":[],"script":[],"noscript":[{"children":"JavaScript is required"}],"charset":"utf-8","viewport":"width=device-width, initial-scale=1.0"};
 
 const appRootId = "__nuxt";
 

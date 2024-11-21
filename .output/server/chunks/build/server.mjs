@@ -890,22 +890,28 @@ async function getRouteRules(url) {
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
 }
+const __nuxt_page_meta$1 = {
+  layout: "avatar"
+};
+const __nuxt_page_meta = {
+  layout: "default"
+};
 const _routes = [
   {
-    name: "home",
-    path: "/home",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./index-tdqld11h.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) ?? "avatar",
+    path: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.path) ?? "/avatar",
+    meta: __nuxt_page_meta$1 || {},
+    alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
+    redirect: __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect,
+    component: () => import('./index-Dr7iD_Wz.mjs').then((m) => m.default || m)
   },
   {
-    name: "index",
-    path: "/",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./index-C_sS0IUD.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
+    path: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) ?? "/",
+    meta: __nuxt_page_meta || {},
+    alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
+    redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
+    component: () => import('./index-rs3woGn5.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1351,7 +1357,7 @@ function definePayloadReducer(name, reduce) {
   }
 }
 const clientOnlySymbol = Symbol.for("nuxt:client-only");
-defineComponent({
+const __nuxt_component_0$1 = defineComponent({
   name: "ClientOnly",
   inheritAttrs: false,
   // eslint-disable-next-line vue/require-prop-types
@@ -1403,8 +1409,8 @@ const revive_payload_server_aCd5kyANw0 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-Ciadij24.mjs').then((r) => r["default"] || r.default || r));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DF7b2e1W.mjs').then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-DD0e-chH.mjs').then((r) => r["default"] || r.default || r));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-D6cmZEHp.mjs').then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -5416,11 +5422,11 @@ const localeCodes = [
 ];
 const localeLoaders = {
   "en-US": [{ key: "../locales/en-US.ts", load: () => import(
-    './en-US-Bzd8RCgi.mjs'
+    './en-US-CJ_IcRPy.mjs'
     /* webpackChunkName: "locale__Users_fuwenmiao_2024_pangu_network_locales_en_US_ts" */
   ), cache: false }],
   "zh-CN": [{ key: "../locales/zh-CN.ts", load: () => import(
-    './zh-CN-CW06970d.mjs'
+    './zh-CN-z6eRGyXv.mjs'
     /* webpackChunkName: "locale__Users_fuwenmiao_2024_pangu_network_locales_zh_CN_ts" */
   ), cache: false }]
 };
@@ -12658,7 +12664,8 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-7f3407f7"]]);
 const layouts = {
-  default: () => import('./default-BgKaLR9_.mjs').then((m) => m.default || m)
+  avatar: () => import('./avatar-GYIQ7vgy.mjs').then((m) => m.default || m),
+  default: () => import('./default-CF96c1pB.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -12957,8 +12964,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-B8aemgi3.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-Dl7WeGFW.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-cqaNVRG0.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-DrBVRaWX.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -13036,5 +13043,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { useRequestEvent as A, withLeadingSlash as B, encodeParam as C, encodePath as D, useNuxtApp as E, injectHead as F, resolveUnrefHeadInput as G, useState as H, _export_sfc as _, isStringNumber as a, isBoolean as b, useIdInjection as c, debugWarn as d, entry$1 as default, useNamespace as e, isUndefined as f, useZIndex as g, useId as h, isNumber as i, caret_top_default as j, arrow_down_default as k, loading_default as l, useI18n as m, useRoute as n, useRouter as o, hasProtocol as p, joinURL as q, parseURL as r, parseQuery as s, throwError as t, useGetDerivedNamespace as u, nuxtLinkDefaults as v, useRuntimeConfig as w, navigateTo as x, withTrailingSlash as y, withoutTrailingSlash as z };
+export { isStringNumber as A, isUndefined as B, caret_top_default as C, useRequestEvent as D, withLeadingSlash as E, encodeParam as F, encodePath as G, useNuxtApp as H, injectHead as I, resolveUnrefHeadInput as J, useState as K, _export_sfc as _, __nuxt_component_0$1 as a, useZIndex as b, useId as c, defaultNamespace as d, entry$1 as default, close_default as e, useI18n as f, useGetDerivedNamespace as g, useIdInjection as h, isBoolean as i, isNumber as j, debugWarn as k, loading_default as l, arrow_down_default as m, useRoute as n, useRouter as o, hasProtocol as p, joinURL as q, parseURL as r, parseQuery as s, throwError as t, useNamespace as u, nuxtLinkDefaults as v, useRuntimeConfig as w, navigateTo as x, withTrailingSlash as y, withoutTrailingSlash as z };
 //# sourceMappingURL=server.mjs.map

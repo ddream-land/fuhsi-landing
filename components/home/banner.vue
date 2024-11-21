@@ -1,18 +1,19 @@
 <template>
-	<div class="relative grid md:grid-cols-2 grid-cols-1 md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bgw.png')">
-		<div class="flex flex-col md:items-end items-center justify-center md:h-[694px] z-10">
-			<div>
-				<div class="md:text-6xl text-4xl font-bold">{{ $t('home.trust') }}</div>
-				<div class="md:text-6xl text-4xl tracking-tighter my-4">idea to game</div>
-				<!-- <div class="md:text-6xl text-4xl font-bold text-bor tracking-tighter mt-2">idea to game</div> -->
-				<div class="md:text-6xl text-4xl font-bold mt-2">Made possible</div>
+	<div class="relative md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden" style="background-image: url('/img/home/bnr-bgw.png')">
+		<div class="flex flex-col items-center justify-center md:h-[604px] z-10">
+			<div class="text-center">
+				<div class="md:flex items-center">
+					<div class="md:text-6xl text-4xl tracking-tighter my-4 ml-12 mr-16">idea to game</div>
+					<div class="md:text-6xl text-4xl font-bold mt-2">Made possible</div>
+				</div>
 				<div class="text-[#ccc] mt-8">Create your own customized game</div>
 
 				<button class="bnr-btn cursor-pointer mt-12 mb-4 bg-cover bg-no-repeat bg-center text-black hover:text-slate-700 text-xl font-bold w-[349px] h-[82px]" style="background-image: url('/img/home/btn-ngw.png')">Start Building</button>
 			</div>
+			<div class="w-[80%] 2xl:w-[1000px] text-center mx-auto md:mt-12 mt-6 md:text-3xl text-xl !leading-normal" style="background-image: linear-gradient(to right, #18A9CC , #60EFE5);-webkit-background-clip: text;background-clip: text;color: transparent;">To build a community-owned film-level UGC interactive storytelling game platform to fulfill every fantasies </div>
 		</div>
 		<div class="flex flex-col justify-center z-10">
-			<NuxtImg src="/img/home/bnr-coinnew.png" class="w-[341px] h-auto coin1 md:ml-12"/>
+			<!-- <NuxtImg src="/img/home/bnr-coinnew.png" class="w-[341px] h-auto coin1 md:ml-12"/> -->
 
 			<!-- <div class="flex">
 				<div>
