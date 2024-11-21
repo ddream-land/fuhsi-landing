@@ -39,7 +39,7 @@ onMounted(() => {
 // 设置SEO
 useHead({
     titleTemplate: (productCategory: any) => {
-        const baseTitle = "galgame.ai";
+        const baseTitle = "DDream";
         return `${baseTitle}${productCategory ? " - " + productCategory : ""}`;
     },
 });

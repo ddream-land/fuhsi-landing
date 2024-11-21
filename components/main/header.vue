@@ -52,7 +52,7 @@ const jumpToHash = (id) => {
 
         <div class="flex items-center">
             <!-- 导航菜单 -->
-            <nav class="hidden lg:flex mr-4">
+            <nav class="hidden lg:flex md:mr-16 mr-4">
                 <!-- <template v-for="item in navigation" :key="item.name">
                     <div v-if="!!item.id" @click="jumpToHash(item.id)" class="hover:text-gray-300 hover:underline md:text-lg text-base flex items-center 2xl:px-6 xl:px-4 md:px-2 cursor-pointer">
                         {{ $t(item.name) }}
@@ -69,14 +69,14 @@ const jumpToHash = (id) => {
                 
             </nav>
 
-            <el-dropdown @command="onLanguageChange">
+           <!--  <el-dropdown @command="onLanguageChange">
                 <Icon name="gis:earth-euro-africa-o" size="20" class="md:mr-36 mr-12 cursor-pointer hover:text-[#8affd4]"/>
                 <template #dropdown>
                     <el-dropdown-menu>
                         <el-dropdown-item v-for="lol in locales" :key="lol.code" :command="lol.code" :disabled="locale === lol.code">{{ lol.name }}</el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
-            </el-dropdown>
+            </el-dropdown> -->
         </div>
 
 
