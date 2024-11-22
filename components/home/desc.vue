@@ -1,5 +1,5 @@
 <template>
-	<section class="m-auto md:w-[650px] w-[90%] md:pt-8 pt-16 pb-12">
+	<section class="m-auto md:w-[650px] w-[90%] pt-16 pb-20 bg-[#191919] md:px-24 box-content mt-8">
 		<div class="text-3xl font-bold text-center pb-4">About DDream</div>
 		<div class="text-base">
 	       	<div class="mt-8">Founded in 2022, DDream is a pioneering technology company merging cutting-edge AI with innovative gaming experiences. Our team comprises industry veterans from leading companies such as NetEase, Tencent, miHoYo, and Papergames, bringing a wealth of expertise to our ambitious projects.</div>

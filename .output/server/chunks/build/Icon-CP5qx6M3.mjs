@@ -1,4 +1,4 @@
-import { u as useAppConfig, r as resolveIconName } from './index-BjDulea9.mjs';
+import { u as useAppConfig, r as resolveIconName } from './index-p_YesM7L.mjs';
 import { _ as _export_sfc, h as useState, j as useNuxtApp } from './server.mjs';
 import { useSSRContext, defineComponent, watch, ref, computed, withAsyncContext, mergeProps, unref, createVNode, resolveDynamicComponent } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderVNode, ssrRenderSlot, ssrInterpolate } from 'vue/server-renderer';
@@ -155,4 +155,4 @@ _sfc_main.setup = (props, ctx) => {
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-a07afb05"]]);
 
 export { __nuxt_component_0 as default };
-//# sourceMappingURL=Icon-C-bGN3w-.mjs.map
+//# sourceMappingURL=Icon-CP5qx6M3.mjs.map
