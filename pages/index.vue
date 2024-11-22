@@ -1,6 +1,7 @@
 <template>
     <section>
         <HomeBanner/>
+        <HomeDesc/>
         <HomeHowItWorks id="howItWorks"/>
         <!-- <HomeOurInvestors id="ourInvestors"/> -->
         <HomeEcosystem id="ecosystem"/>

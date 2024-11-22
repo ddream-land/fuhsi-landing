@@ -23,8 +23,8 @@ import '@vue/shared';
 import 'pinia-plugin-persistedstate';
 import 'nprogress';
 
-const _sfc_main$5 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+const _sfc_main$6 = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
   _push(`<div${ssrRenderAttrs(mergeProps({
     class: "relative md:gap-x-40 bg-contain bg-no-repeat bg-center overflow-hidden",
     style: { "background-image": "url('/img/home/bnr-bgw.png')" }
@@ -34,13 +34,24 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   });
   _push(`<!--]--></div></div>`);
 }
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/banner.vue");
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+};
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-da144bbc"]]);
+const _sfc_main$5 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  _push(`<section${ssrRenderAttrs(mergeProps({ class: "m-auto md:w-[650px] w-[90%] md:pt-8 pt-16 pb-12" }, _attrs))}><div class="text-3xl font-bold text-center pb-4">About DDream</div><div class="text-base"><div class="mt-8">Founded in 2022, DDream is a pioneering technology company merging cutting-edge AI with innovative gaming experiences. Our team comprises industry veterans from leading companies such as NetEase, Tencent, miHoYo, and Papergames, bringing a wealth of expertise to our ambitious projects.</div><div class="mt-8">In 2023, DDream secured Series A funding from notable investors including UpHonest Capital, GrandVC, Agora Venture etc., validating our vision and accelerating our growth.</div><div class="mt-8">Our focus is twofold: developing incredibly life-like AI NPCs and creating games centered around these advanced AI entities. Our flagship product, galgame.ai, exemplifies this vision by allowing users to effortlessly create personalized visual novel games with just a few clicks, all dynamically controlled by our sophisticated AI.</div><div class="mt-8">At DDream, we&#39;re committed to revolutionizing gaming through AI, offering unprecedented levels of immersion and interactivity. Our goal is to blur the lines between virtual and reality, providing players with uniquely engaging and adaptive gaming experiences.</div></div></section>`);
+}
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/banner.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/desc.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-da144bbc"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$2]]);
 const _sfc_main$4 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   const _component_NuxtImg = __nuxt_component_0$1;
@@ -80,7 +91,7 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/howItWorks.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-7b44842d"]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-7b44842d"]]);
 const _sfc_main$3 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtImg = __nuxt_component_0$1;
@@ -94,7 +105,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/home/ecosystem.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-d4657b76"]]);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-d4657b76"]]);
 const _sfc_main$2 = {
   __name: "founderAndAdvisors",
   __ssrInlineRender: true,
@@ -173,12 +184,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     ref(null);
     return (_ctx, _push, _parent, _attrs) => {
       const _component_HomeBanner = __nuxt_component_0;
-      const _component_HomeHowItWorks = __nuxt_component_1;
-      const _component_HomeEcosystem = __nuxt_component_2;
+      const _component_HomeDesc = __nuxt_component_1;
+      const _component_HomeHowItWorks = __nuxt_component_2;
+      const _component_HomeEcosystem = __nuxt_component_3;
       const _component_HomeFounderAndAdvisors = _sfc_main$2;
       const _component_HomeBackers = _sfc_main$1;
       _push(`<section${ssrRenderAttrs(_attrs)}>`);
       _push(ssrRenderComponent(_component_HomeBanner, null, null, _parent));
+      _push(ssrRenderComponent(_component_HomeDesc, null, null, _parent));
       _push(ssrRenderComponent(_component_HomeHowItWorks, { id: "howItWorks" }, null, _parent));
       _push(ssrRenderComponent(_component_HomeEcosystem, { id: "ecosystem" }, null, _parent));
       _push(ssrRenderComponent(_component_HomeFounderAndAdvisors, null, null, _parent));
@@ -195,4 +208,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-B10DMrZI.mjs.map
+//# sourceMappingURL=index-BQYtMfqa.mjs.map
