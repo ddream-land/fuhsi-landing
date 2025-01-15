@@ -5,6 +5,7 @@
         <HomeHowItWorks id="howItWorks"/>
         <!-- <HomeOurInvestors id="ourInvestors"/> -->
         <HomeEcosystem id="ecosystem"/>
+        <HomeUseCase />
         <HomeFounderAndAdvisors />
         <HomeBackers />
     </section>
